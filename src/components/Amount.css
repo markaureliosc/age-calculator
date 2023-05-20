@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Poppins-ExtraBoldItalic;
+  src: url('../fonts/Poppins-ExtraBoldItalic.ttf');
+}
+
+.amount{
+  grid-row: span 2;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.amount p{
+  font-family: Poppins-ExtraBoldItalic;
+  font-size: 5rem;
+}
+
+.amount p span{
+  font-family: Poppins-ExtraBoldItalic;
+
+  color: #834EFE;
+}
+
+@media(max-width: 850px){
+  .amount{
+    margin-top: 65px;
+  }
+
+  .amount p{
+    font-size: 56px;
+  }
+}

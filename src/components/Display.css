@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Italic;
+  src: url('../fonts/Poppins-Italic.ttf');
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.dispaly {
+  grid-row: span 1;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-color: #ececec;
+  border-radius: 10px;
+  padding: 10px;
+
+  width: 120px;
+  height: 40px;
+
+  font-size: 30px;
+  font-family: Poppins-Bold;
+
+  border: 2px solid #dddddd;
+}
+
+.arrow {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+
+  background-color: #151515;
+  border: none;
+
+  cursor: pointer;
+  background-image: url('../images/arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 6px;
+}
+
+.numbers {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+}
+
+.display nav {
+  grid-row: span 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ececec;
+
+  width: 100%;
+  height: 2px;
+}
+
+.display label {
+  font-size: 1rem;
+  font-family: Poppins-Bold;
+
+  color: #747474;
+}
+
+input:focus {
+  outline: none;
+  border-color: #834efe;
+}
+
+.arrow:hover {
+  width: 90px;
+  height: 90px;
+
+  outline: none;
+  background-color: #834efe;
+}
+
+.dateEmpty {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateEmpty label {
+  color: #da5a5b;
+}
+
+.dateEmpty input {
+  border-color: #da5a5b;
+}
+
+.empty {
+  margin-top: 7px;
+
+  font-family: Poppins-Italic;
+  font-size: 13px;
+  color: #da5a5b;
+}
+
+@media (max-width: 850px) {
+  .display {
+    width: 350px;
+  }
+
+  .arrow {
+    width: 75px;
+    height: 75px;
+  }
+
+  .input {
+    font-size: 28px;
+    width: 80px;
+  }
+
+  .date {
+    margin-right: 22px;
+  }
+
+  .arrow:hover {
+    width: 85px;
+    height: 85px;
+  }
+
+  .display nav {
+    justify-content: center;
+
+    margin-top: 80px;
+  }
+}
